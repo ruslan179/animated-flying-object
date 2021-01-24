@@ -1,0 +1,48 @@
+.wrap {
+    position: relative;
+    margin: 5% auto;
+    padding: 20px;
+    width: 500px;
+    height: 500px;
+    box-sizing: border-box;
+    background-color: aqua;
+}
+.square {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: #555555;
+    animation: move 7s linear infinite;
+}
+
+@keyframes move {
+    0% { 
+        top: 0px; 
+        left: 0px;
+    }
+
+    25% {
+        top: 0px;
+        left: 80%;
+    }
+
+    50% {
+        top: 80%;
+        left: 80%;
+        border-radius: 50%;
+    }
+
+    75% {
+        top: 80%;
+        left: 0px;
+    }
+
+    100% {
+        top: 0px;
+        left: 0px;
+        transform: rotate(1080deg);
+    }
+
+}
+
